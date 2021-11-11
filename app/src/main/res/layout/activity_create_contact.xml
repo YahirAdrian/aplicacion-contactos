@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.CreateContactActivity"
+    android:background="#FFFFFF"
+    >
+
+    <ImageView
+        android:id="@+id/imgContactEdit"
+        android:layout_marginTop="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:src="@drawable/icono_contacto"
+        />
+
+    <EditText
+        android:id="@+id/editNombreContacto"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="Nombre del contacto"
+        android:layout_below="@+id/imgContactEdit"
+        android:layout_marginTop="22dp"
+        />
+
+    <EditText
+        android:id="@+id/editDescripcionContacto"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="Descripcion del contacto"
+        android:layout_below="@+id/editNombreContacto"
+        android:layout_marginTop="22dp"
+        />
+
+    <EditText
+        android:id="@+id/editTelefonoContacto"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/editDescripcionContacto"
+        android:layout_marginTop="22dp"
+        android:hint="Telefono"
+        android:inputType="phone" />
+
+
+    <EditText
+        android:id="@+id/editCorreoContacto"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:inputType="textEmailAddress"
+        android:hint="Correo"
+        android:layout_below="@+id/editTelefonoContacto"
+        android:layout_marginTop="22dp"
+        />
+
+
+    <Button
+        android:id="@+id/botonCrear"
+        android:layout_width="match_parent"
+        android:background="#1673B9"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:text="Crear contacto"
+        android:textColor="#FFF"
+        android:textSize="20dp"/>
+</RelativeLayout>

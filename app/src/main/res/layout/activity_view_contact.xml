@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.ViewContactActivity"
+    >
+
+    <ImageView
+        android:id="@+id/imagenContacto"
+        android:layout_marginTop="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:src="@drawable/icono_contacto"
+        />
+
+    <TextView
+        android:id="@+id/nombreContacto"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@+id/imagenContacto"
+        android:layout_marginTop="22dp"
+        android:textSize="30dp"
+        android:text="Nombre del contacto"
+        android:textAlignment="center"
+        android:textColor="#000"
+        />
+
+    <TextView
+        android:id="@+id/descripcionContacto"
+        android:layout_marginLeft="10dp"
+        android:layout_below="@+id/nombreContacto"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="Descripcion del contacto"
+        android:textStyle="italic"
+        android:textSize="15dp"
+        />
+
+    <TextView
+        android:id="@+id/telefonoContacto"
+        android:layout_marginLeft="10dp"
+        android:layout_width="300dp"
+        android:layout_height="46dp"
+        android:layout_below="@+id/descripcionContacto"
+        android:layout_marginTop="60dp"
+        android:text="Telefono: 9871408375"
+        android:textColor="#000"
+        android:textSize="20dp" />
+
+    <Button
+        android:id="@+id/botonLlamar"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_toRightOf="@+id/telefonoContacto"
+        android:layout_below="@+id/descripcionContacto"
+        android:layout_marginTop="60dp"
+        android:layout_marginLeft="30dp"
+        android:background="@android:drawable/ic_menu_call"/>
+
+    <TextView
+        android:id="@+id/correoContacto"
+        android:layout_marginLeft="10dp"
+        android:layout_width="300dp"
+        android:layout_height="46dp"
+        android:layout_below="@+id/telefonoContacto"
+        android:layout_marginTop="60dp"
+        android:text="Correo: coreo123@example.com"
+        android:textColor="#000"
+        android:textSize="20dp" />
+
+    <Button
+        android:id="@+id/botonCorreo"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_toRightOf="@+id/correoContacto"
+        android:layout_below="@+id/botonLlamar"
+        android:layout_marginTop="60dp"
+        android:layout_marginLeft="30dp"
+        android:background="@drawable/enviar_correo"/>
+
+
+</RelativeLayout>
